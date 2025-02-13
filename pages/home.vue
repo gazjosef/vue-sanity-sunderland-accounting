@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="about">
+  <div class="home">
     <h1>Home</h1>
     <!-- <h1>{{ aboutContent.title }}</h1>
     <p>{{ aboutContent.body }}</p> -->
