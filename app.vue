@@ -1,23 +1,14 @@
-<script setup lang="ts">
-// import { ref, onMounted } from "vue";
-
-// const isDark = ref(false);
-
-// onMounted(() => {
-//   isDark.value = window.matchMedia("(prefers-color-scheme: dark)").matches;
-// });
-
-// const toggleDarkMode = () => {
-//   isDark.value = !isDark.value;
-//   document.documentElement.classList.toggle("dark", isDark.value);
-// };
-</script>
-
 <template>
-  <div>
+  <h1>App</h1>
+  <!-- <div>
     <NuxtRouteAnnouncer />
     <NuxtWelcome />
-  </div>
+    <div :class="{ dark: isDark }">
+      <Navbar @toggleDarkMode="toggleDarkMode" />
+      <slot />
+      <Footer :year="new Date().getFullYear()" />
+    </div>
+  </div> -->
 </template>
 
 <style lang="scss">
