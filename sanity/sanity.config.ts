@@ -5,9 +5,9 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'Ant Software',
+  title: 'ant-software',
 
-  projectId: '5v9e5z9l',
+  projectId: '0ysfhbnx',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],
