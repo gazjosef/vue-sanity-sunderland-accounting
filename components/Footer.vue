@@ -1,17 +1,17 @@
 <script setup lang="ts">
-// defineProps<{ year: number }>();
+defineProps<{ year: number }>();
 </script>
 
 <template>
   <footer class="footer">
     <h1>Footer</h1>
-    <!-- <img src="/logo.svg" alt="Logo" class="footer__logo" />
+    <!-- <img src="/logo.svg" alt="Logo" class="footer__logo" /> -->
     <p>© {{ year }} Your Company</p>
     <nav>
       <NuxtLink to="/">Home</NuxtLink>
       <NuxtLink to="/about">About</NuxtLink>
       <NuxtLink to="/contact">Contact</NuxtLink>
-    </nav> -->
+    </nav>
   </footer>
 </template>
 
