@@ -40,6 +40,8 @@
 </template>
 
 <script setup lang="ts">
+import { useRoute } from 'vue-router'
+
 const route = useRoute()
 const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
 </script>
