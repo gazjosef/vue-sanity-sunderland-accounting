@@ -7,6 +7,11 @@ import GetStartedCode from "@/app/components/GetStartedCode";
 import SideBySideIcons from "@/app/components/SideBySideIcons";
 import { settingsQuery } from "@/sanity/lib/queries";
 import { sanityFetch } from "@/sanity/lib/live";
+import Hero from "./components/Sections/Hero";
+import About from "./components/Sections/About";
+import Services from "./components/Sections/Services";
+import Gallery from "./components/Sections/Gallery";
+import Contact from "./components/Sections/Contact";
 
 export default async function Page() {
   const { data: settings } = await sanityFetch({
@@ -15,6 +20,11 @@ export default async function Page() {
 
   return (
     <>
+      <Hero />
+      <Services />
+      <About />
+      <Gallery />
+      <Contact />
       {/* <div className="relative">
         <div className="relative bg-[url(/images/tile-1-black.png)] bg-size-[5px]">
           <div className="bg-gradient-to-b from-white w-full h-full absolute top-0"></div>
