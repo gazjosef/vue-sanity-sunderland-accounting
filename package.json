@@ -1,26 +1,29 @@
 {
-  "name": "vue-sunderland",
-  "version": "1.0.0",
-  "private": true,
-  "workspaces": [
-    "nuxt-app",
-    "studio"
-  ],
+  "name": "sunderland-accounting",
+  "description": "Next.js + Sanity: A Powerful Website Starter with Real-time Visual Editing",
   "scripts": {
-    "dev": "concurrently \"npm run dev --workspace=nuxt-app\" \"npm run dev --workspace=studio\"",
-    "format": "prettier --cache --write ."
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:next": "npm run dev --workspace=frontend",
+    "dev:studio": "npm run dev --workspace=studio",
+    "import-sample-data": "cd studio && sanity dataset import sample-data.tar.gz --replace"
   },
-  "prettier": {
-    "plugins": [
-      "prettier-plugin-packagejson"
-    ],
-    "semi": false,
-    "singleQuote": true
+  "keywords": [
+    "Sanity",
+    "Next.js",
+    "Headless CMS",
+    "Visual Editing",
+    "Live Content API (LCAPI)",
+    "Real-time"
+  ],
+  "bugs": {
+    "url": "https://github.com/sanity-io/sanity-template-nextjs-clean/issues"
   },
+  "homepage": "https://github.com/sanity-io/sanity-template-nextjs-clean#readme",
+  "workspaces": [
+    "studio",
+    "frontend"
+  ],
   "devDependencies": {
-    "concurrently": "^9.1.0",
-    "prettier": "^3.4.2",
-    "prettier-plugin-packagejson": "2.5.0"
-  },
-  "packageManager": "pnpm@9.15.0"
+    "npm-run-all": "^4.1.5"
+  }
 }
