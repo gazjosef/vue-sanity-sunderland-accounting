@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import NavbarList from "./NavbarList";
 import NavbarMobileNavToggle from "./NavbarMobileNavToggle";

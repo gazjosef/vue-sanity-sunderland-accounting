@@ -15,7 +15,7 @@ export default async function Page() {
 
   return (
     <>
-      <div className="relative">
+      {/* <div className="relative">
         <div className="relative bg-[url(/images/tile-1-black.png)] bg-size-[5px]">
           <div className="bg-gradient-to-b from-white w-full h-full absolute top-0"></div>
           <div className="container">
@@ -72,7 +72,7 @@ export default async function Page() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="border-t border-gray-100 bg-gray-50">
         <div className="container">
           <aside className="py-12 sm:py-20">

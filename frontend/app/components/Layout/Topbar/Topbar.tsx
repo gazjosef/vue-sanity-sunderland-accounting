@@ -1,4 +1,4 @@
-// Topbar.tsx
+"use client";
 import React from "react";
 import { FaFacebook, FaGooglePlusG, FaLinkedin, FaPhone } from "react-icons/fa";
 
